@@ -12,10 +12,11 @@ public class HelloWorld {
         System.out.println(System.currentTimeMillis() + " Hello world!");
     }
 
-    public static int main(String [] args){
+    public static void main(String [] args){
         HelloWorld hello = new HelloWorld();
-        hello.doSomething();
 
-        return 0;
+        for (int x=0; x<20; x++) {
+            hello.doSomething();
+        }
     }
 }
